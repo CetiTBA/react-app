@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import companyLogo from '../pictures/albanian-flag.png';
 
 const Header: React.FC = () => {
   return (
     <header>
-      <h1>Welcome to Albania</h1>
+      <div className="logo-container">
+        <Link to="/" className="logo-link">
+          <img src={companyLogo} alt="Company Logo" className="logo" />
+        </Link>
+        <span className="company-name">Albanian Adventure</span>
+      </div>
       <nav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
           <li>
             <Link to="/history">History</Link>
           </li>

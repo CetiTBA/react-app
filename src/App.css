@@ -16,7 +16,7 @@ li {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  background-color: #dcdcdc;
+  background-color: #d9d6d6;
   color: #333;
 }
 
@@ -26,28 +26,50 @@ body {
   padding: 20px;
 }
 
+/* app.css */
+/* app.css */
+
+/* Header Styles */
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 60px;
+}
+
+.company-name {
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 nav li {
-  display: inline;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 nav a {
@@ -60,6 +82,8 @@ nav a {
 nav a:hover {
   color: #ff8c00;
 }
+
+
 
 .content {
   padding: 20px;
